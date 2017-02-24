@@ -106,7 +106,7 @@
 							<hr>
 							<center><h2>Estimation de la position des premiers temps dans un signal audio musical</h2></center>
 							<hr>
-								<p>We present the inputs that led to the maximum activation of the networks. </p>
+								<p>We show the inputs that led to the maximum activation of the networks. The audio is also provided, with a super-imposed clic at the estimation downbeat position. It should match the 21st or the 41st time frame depending on the input size. We display 5 input per network for two differents styles. The first style is pop/rock music, and the second one is classical music.</p>
 
 								<hr>
 								<p>1. Harmonic Network </p>
@@ -119,14 +119,54 @@
 									<th>DNN input</th>		
 								</tr>
 								<tr>
-									<td>First song:</td>
-									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/excerpt1.wav"></audio></td>		
-									<td><img src="demos/thesis/dnnsimg/excerpt1.png" alt="excerpt1" style="width:428px;height:428px;"></td>
+									<td>SH1:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_rock_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_rock_1-1.png" alt="hcnn_rock_1" style="width:528px;height:228px;"></td>
 								</tr>
 								<tr>
-									<td>Voice</td>
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim2.wav"></audio></td>		
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim_EM_2.wav"></audio></td>
+									<td>SH2:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_rock_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_rock_2-1.png" alt="hcnn_rock_2" style="width:528px;height:228px;"></td>
+								</tr>
+								<tr>
+									<td>SH3:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_rock_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_rock_3-1.png" alt="hcnn_rock_3" style="width:528px;height:228px;"></td>
+								</tr>
+								<tr>
+									<td>SH4:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_rock_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_rock_4-1.png" alt="hcnn_rock_4" style="width:528px;height:228px;"></td>
+								</tr>
+								<tr>
+									<td>SH5:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_rock_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_rock_5-1.png" alt="hcnn_rock_5" style="width:528px;height:228px;"></td>
+								</tr>
+								<tr>
+									<td>SH6:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_classical_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_classical_1-1.png" alt="hcnn_classical_1" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SH7:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_classical_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_classical_2-1.png" alt="hcnn_classical_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SH8:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_classical_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_classical_3-1.png" alt="hcnn_classical_3" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SH9:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_classical_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_classical_4-1.png" alt="hcnn_classical_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SH10:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/hcnn_classical_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/hcnn_classical_5-1.png" alt="hcnn_classical_5" style="width:608px;height:248px;"></td>
 								</tr>
 								
 								</table>
@@ -141,14 +181,54 @@
 									<th>DNN input</th>		
 								</tr>
 								<tr>
-									<td>First song:</td>
-									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/excerpt1.wav"></audio></td>		
-									<td><img src="demos/thesis/dnnsimg/excerpt1.png" alt="excerpt1" style="width:428px;height:428px;"></td>
+									<td>SR1:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_rock_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_rock_1-1.png" alt="rcnn_rock_1" style="width:608px;height:248px;"></td>
 								</tr>
 								<tr>
-									<td>Voice</td>
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim2.wav"></audio></td>		
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim_EM_2.wav"></audio></td>
+									<td>SR2:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_rock_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_rock_2-1.png" alt="rcnn_rock_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR3:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_rock_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_rock_3-1.png" alt="rcnn_rock_3" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR4:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_rock_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_rock_4-1.png" alt="rcnn_rock_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR5:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_rock_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_rock_5-1.png" alt="rcnn_rock_5" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR6:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_classical_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_classical_1-1.png" alt="rcnn_classical_1" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR7:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_classical_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_classical_2-1.png" alt="rcnn_classical_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR8:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_classical_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_classical_3-1.png" alt="rcnn_classical_3" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR9:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_classical_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_classical_4-1.png" alt="rcnn_classical_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SR10:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/rcnn_classical_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/rcnn_classical_5-1.png" alt="rcnn_classical_5" style="width:608px;height:248px;"></td>
 								</tr>
 								
 								</table>
@@ -163,14 +243,54 @@
 									<th>DNN input</th>		
 								</tr>
 								<tr>
-									<td>First song:</td>
-									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/excerpt1.wav"></audio></td>		
-									<td><img src="demos/thesis/dnnsimg/excerpt1.png" alt="excerpt1" style="width:428px;height:428px;"></td>
+									<td>SM1:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_rock_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_rock_1-1.png" alt="mcnn_rock_1" style="width:608px;height:248px;"></td>
 								</tr>
 								<tr>
-									<td>Voice</td>
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim2.wav"></audio></td>		
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim_EM_2.wav"></audio></td>
+									<td>SM2:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_rock_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_rock_2-1.png" alt="mcnn_rock_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM3:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_rock_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_rock_3-1.png" alt="mcnn_rock_3" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM4:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_rock_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_rock_4-1.png" alt="mcnn_rock_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM5:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_rock_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_rock_5-1.png" alt="mcnn_rock_5" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM6:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_classical_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_classical_1-1.png" alt="mcnn_classical_1" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM7:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_classical_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_classical_2-1.png" alt="mcnn_classical_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM8:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_classical_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_classical_3-1.png" alt="mcnn_classical_3" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM9:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_classical_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_classical_4-1.png" alt="mcnn_classical_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SM10:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/mcnn_classical_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/mcnn_classical_5-1.png" alt="mcnn_classical_5" style="width:608px;height:248px;"></td>
 								</tr>
 								
 								</table>
@@ -185,18 +305,57 @@
 									<th>DNN input</th>		
 								</tr>
 								<tr>
-									<td>First song:</td>
-									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/excerpt1.wav"></audio></td>		
-									<td><img src="demos/thesis/dnnsimg/excerpt1.png" alt="excerpt1" style="width:428px;height:428px;"></td>
+									<td>SB1:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_rock_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_rock_3-1.png" alt="bcnn_rock_3" style="width:608px;height:248px;"></td>
 								</tr>
 								<tr>
-									<td>Voice</td>
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim2.wav"></audio></td>		
-									<td><audio controls="controls" preload="none" src="demos/icassp17/512/sim_EM_2.wav"></audio></td>
+									<td>SB2:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_rock_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_rock_2-1.png" alt="bcnn_rock_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB3:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_rock_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_rock_1-1.png" alt="bcnn_rock_1" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB4:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_rock_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_rock_4-1.png" alt="bcnn_rock_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB5:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_rock_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_rock_5-1.png" alt="bcnn_rock_5" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB6:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_classical_1.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_classical_1-1.png" alt="bcnn_classical_1" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB7:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_classical_2.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_classical_2-1.png" alt="bcnn_classical_2" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB8:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_classical_3.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_classical_3-1.png" alt="bcnn_classical_3" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB9:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_classical_4.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_classical_4-1.png" alt="bcnn_classical_4" style="width:608px;height:248px;"></td>
+								</tr>
+								<tr>
+									<td>SB10:</td>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/bcnn_classical_5.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/bcnn_classical_5-1.png" alt="bcnn_classical_5" style="width:608px;height:248px;"></td>
 								</tr>
 								
 								</table>
-
 
 					</section>
 				</div>
