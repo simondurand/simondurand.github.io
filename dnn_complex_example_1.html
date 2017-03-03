@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Simon Durand</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>		
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+    
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+   
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+   
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+   
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+  
+			});
+		</script>	
+		<style>
+			table tr th, table tr td { 
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid white;
+			border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header_container">		
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="4u">
+						<div>
+							<h1><a href="index.html">Simon Durand</a></h1>
+							<h2>Ph.D. student in Audio Signal Processing and Machine Learning</h2>
+							<h2>Télécom ParisTech, CNRS-LTCI</h2>
+					    </div>
+					</div>
+					
+					<nav id="main-nav" class="8u">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<!--<li><a href="resume.html">Resume</a></li>-->
+							<!--<li><a href="publications.html">Publications</a></li>-->
+							<!--<li><a href="demos.html">Demos</a></li>	-->
+							<!--<li><a href="contact.html">Contact</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>	
+        </div>		
+
+		<div id="site_content">
+			<div class="container">			
+				
+			<!-- Features -->
+				<div class="row">
+					<section class="12u">
+							<hr>
+							<center><h2>Estimation de la position des premiers temps dans un signal audio musical</h2></center>
+							<hr>
+								<p>We show the activation of each of the four adapted networks presented in our Ph.D manuscript on a challenging exemple, aswell as the mean activation of all four networks. The audio is also provided with a superimposed clic at the downbeat position as estimated by the mean network activation. We see that the combination of the networks is able to produce a suitable downbeat detection funciton that leads to an appropriate downbeat sequence, while each network individually is less reliable.</p>
+
+								<hr>
+								<p>1. Harmonic Network </p>
+								<!-- <p>First song: <audio controls="" preload="none" src="demos/thesis/dnnsaudio/excerpt1.wav"></audio></p> -->
+
+								<table style="width:100px">
+								<tr>
+									<th>Audio signal</th>
+									<th>Network output</th>		
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/challenging_example.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/HCNN_ce-1.png" alt="HCNN_ce" style="width:688px;height:228px;"></td>
+								</tr>
+								
+								</table>
+
+								<p>2. Rhythmic Network </p>
+
+
+								<table style="width:100px">
+								<tr>
+									<th>Audio signal</th>
+									<th>Network output (after reduction)</th>		
+								</tr>	
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/challenging_example.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/RCNN_ce-1.png" alt="RCNN_ce" style="width:688px;height:228px;"></td>
+								</tr>							
+								</table>
+
+								<p>3. Melodic Network </p>
+
+
+								<table style="width:100px">
+								<tr>
+									<th>Audio signal</th>
+									<th>Network output</th>		
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/challenging_example.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/MCNN_ce-1.png" alt="RCNN_ce" style="width:688px;height:228px;"></td>
+								</tr>
+								</table>
+
+								<p>4. Bass Network </p>
+
+
+								<table style="width:100px">
+								<tr>
+									<th>Audio signal</th>
+									<th>Network output (after reduction)</th>		
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/challenging_example.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/BCNN_ce-1.png" alt="BCNN_ce" style="width:688px;height:228px;"></td>
+								</tr>
+								</table>
+								<p>5. Network Combination </p>
+
+
+								<table style="width:100px">
+								<tr>
+									<th>Audio signal</th>
+									<th>Network output</th>		
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/dnnsaudio/challenging_example.wav"></audio></td>		
+									<td><img src="demos/thesis/dnnsimg/meanCNN_ce-1.png" alt="meanCNN_ce" style="width:688px;height:228px;"></td>
+								</tr>
+								</table>
+
+					</section>
+				</div>
+			</div>
+        </div>		
+		
+			<div class="container">			
+			<!-- Footer -->
+				<footer>
+					<p>Copyright &copy; CSS3_building | <a href="http://skeljs.org/">skel.js</a> | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+				</footer>		
+			</div>		
+			
+	</body>
+</html>
