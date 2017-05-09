@@ -106,46 +106,99 @@
 							<hr>
 							<center><h2>Estimation de la position des premiers temps dans un signal audio musical</h2></center>
 							<hr>
-								<p>We show several audio examples where a downbeat can be found. The first one is straightforward while the others are up to a subjective evaluation.</p>
+								<p>We show several audio examples where 1) our system fails and the state of the art is successful, or 2) our system is successful and the state of the art fails. A clic is superimposed at the ground truth downbeat positions.</p>
 
 								<hr>
 
+								<p>1. Our system fails and the state of the art is successful </p>
+
 								<table style="width:100px">
 								<tr>
-									<th>Simple example</th>
+									<th>Folk song - 3 tatums per beat</th>
 								</tr>
 								<tr>
-									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/easyDB.wav"></audio></td>	
+									<td><audio controls="controls" preload="none" src="demos/thesis/difference_dnn_sota/folk.wav"></audio></td>	
 								</tr>
 								
 								</table>
 
 								<table style="width:100px">
 								<tr>
-									<th>Ambiguous meter/tempo</th>
+									<th>Pop song - kick pattern and bass network</th>
 								</tr>
 								<tr>
-									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/meterTempo.wav"></audio></td>	
-								</tr>
-								
-								</table>
-
-								<table style="width:100px">
-								<tr>
-									<th>Ambiguous timing/meter</th>
-								</tr>
-								<tr>
-									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/timingMeter.wav"></audio></td>	
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/pop.wav"></audio></td>	
 								</tr>
 								
 								</table>
 
 								<table style="width:100px">
 								<tr>
-									<th>Ambiguous offbeats</th>
+									<th>Rap song - rapping highlight the third beat</th>
 								</tr>
 								<tr>
-									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/offbeat.wav"></audio></td>	
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/rap.wav"></audio></td>	
+								</tr>
+
+								<p>2. Our system is successful and the state of the art fails </p>
+								
+								</table>
+
+								<table style="width:100px">
+								<tr>
+									<th>Progressive rock song - 5 beats per bar </th>
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/prog_rock.wav"></audio></td>	
+								</tr>
+								
+								</table>
+
+								<table style="width:100px">
+								<tr>
+									<th>Jazz song - bass and melody good together </th>
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/jazz.wav"></audio></td>	
+								</tr>
+								
+								</table>
+
+								<table style="width:100px">
+								<tr>
+									<th>Blues song - melodic network helps </th>
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/blues.wav"></audio></td>	
+								</tr>
+								
+								</table>
+
+								<table style="width:100px">
+								<tr>
+									<th>Funk song - Robust to open hi-hat </th>
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/funk.wav"></audio></td>	
+								</tr>
+								
+								</table>
+
+								<table style="width:100px">
+								<tr>
+									<th>Reggae song - Good generalization outside of the training set </th>
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/reggae.wav"></audio></td>	
+								</tr>
+								
+								</table>
+
+								<tr>
+									<th>Classical song - Works without strong rhythm or bass </th>
+								</tr>
+								<tr>
+									<td><audio controls="controls" preload="none" src="demos/thesis/db_examples/classical.wav"></audio></td>	
 								</tr>
 								
 								</table>
